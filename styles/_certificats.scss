@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.certificats {
+  padding-top: 80px;
+
+  &--item {
+    display: flex;
+
+    div {
+      padding: 80px 50px;
+      height: 500px;
+      background-image: url(../bg_img/bg2.jpg);
+      h1 {
+        font-size: 28px;
+        color: #fff;
+        padding: 20px 0;
+      }
+      p{
+        color: #fff;
+        font-size: 19px;
+        line-height: 30px;
+        padding: 10px 0;
+      }
+      button{
+        font-size: 17px;
+        margin-top: 20px;
+        color: #fff;
+        border: none;
+        background: none;
+      }
+    }
+    .certificats--img {
+      width: 737px;
+      height: 500px;
+      img {
+        max-width: 737px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+  .about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    h1{
+        color: #143E78;
+        margin: 10px 0;
+    }
+    p{
+        font-size: 17px;
+        color: rgb(152, 152, 152);
+        margin: 5px 0;
+    }
+  }
+}

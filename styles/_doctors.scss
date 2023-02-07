@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.request {
+  height: 200px;
+  background-image: url(../bg_img/bg2.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 32px;
+  }
+  p {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .btn {
+    padding: 20px 50px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+    color: #fff;
+    font-size: 16px;
+  }
+  .btn:hover {
+    background-color: #fff;
+    color: #545fa9;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+.our-doctors {
+  background-color: #f8fafc;
+  padding-top: 70px;
+  text-align: center;
+  height: 700px;
+
+  &-title {
+    color: #143e78;
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  .doctors {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &-about {
+      width: 300px;
+      height: 300px;
+      img {
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+      }
+      img:hover{
+        transform: scale(1.05);
+      }
+      h1 {
+        font-size: 24px;
+        padding-top: 20px;
+        color: #143e78;
+      }
+      p {
+        color: gray;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 18px;
+      }
+      div {
+        background-color: #fff;
+      }
+    }
+  }
+}
+.appointment {
+  margin-top: 80px;
+  text-align: center;
+  p {
+    color: gray;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  h1 {
+    color: #143e78;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    &--item {
+      width: 500px;
+      height: 50px;
+      margin: 20px;
+      padding: 10px;
+      color: gray;
+      font-size: 15px;
+      border: 1px solid lightgray;
+      border-radius: 2px;
+    }
+  }
+  .btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    label {
+      font-size: 18px;
+      color: gray;
+    }
+    button {
+      padding: 15px 40px;
+      background-color: #545fa9;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doctors{
+      flex-direction: column;
+  }
+}

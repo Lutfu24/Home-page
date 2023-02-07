@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site--card{
+position: relative;
+display: flex;
+justify-content: center;
+
+.site--cards {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: -80px;
+  
+  &--title{
+      display: flex;
+      gap: 20px;
+      padding: 30px;
+      letter-spacing: 1px;
+  }
+  &--item {
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+
+    h3{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    p{
+        padding: 15px;
+        line-height: 30px;
+        font-size: 18px;
+        color: gray;
+    }
+    i{
+        color: #37297A;
+        font-size: 30px;
+    }
+    .btn{
+        font-weight: 400;
+        margin-left: 15px;
+        margin-top: 20px;
+        border: none;
+        background: none;
+        font-size: 16px;
+    }
+    .btn:hover{
+        cursor: pointer;
+    }
+  }
+}
+}
+
+.options{
+    position: relative;
+    background-color: #F8FAFC;
+    height: 950px;
+    z-index: -1;
+
+    &--link{
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: gray;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .img{
+        position: absolute;
+        top: 410px;
+        left: 100px;
+        width: 600px;
+        height: 400px;
+    }
+    .img img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .text{
+        position: absolute;
+        top: 440px;
+        left: 800px;
+
+        h2{
+            color: #143E78;
+            font-size: 32px;
+            padding-bottom: 20px;
+        }
+        p{
+            color: gray;
+            font-size: 18px;
+            padding-right: 50px;
+            line-height: 25px;
+        }
+        li{
+            list-style: none;
+            line-height: 25px;
+            font-size: 18px;
+            color: gray;
+            padding-top: 30px;
+            i{
+                color: rgb(54, 133, 54);
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .site--cards{
+        flex-direction: column;
+    }
+}
+
+
+
